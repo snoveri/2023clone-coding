@@ -4,44 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practice</title>
-    <style>
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        h1{
-            animation: font 3s ease-in-out;
-        }
-        img{
-            border: 2px solid black;
-            border-radius: 40%;
-            animation: imgs 3s ease-in-out;
-        }
-        @keyframes font {
-            from{
-                opacity: 0;
-            }
-            to{
-                opacity: 100;
-            }
-        }
-        @keyframes imgs{
-            0%{
-                transform: rotateY(0deg);
-                opacity: 0;
-            }
-            100%{
-                transform: rotateY(180deg);
-                opacity: 100;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <title>welcome to cocoatalk</title>
 </head>
 <body>
-    <img src="img/cmp.jpg" alt="">
-    <h1>welcome to home page</h1>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>231%</span>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+    <header class="welcome-header">
+        <h1 class="welcome-haeder__title">Welcome to KoKoaTalk</h1>
+        <p class="welcome-haeder__text">If you have a KoKoa Account, login with your email or phone number.</p>
+    </header>
+    
+    <form id="login-form">
+        <input type="text" placeholder="Email or phone number">
+        <input type="password" placeholder="Password">
+        <input type="submit" value="Login">
+        <a href="#">Find KoKoa Account or Password</a>
+    </form>
+    
+    <script src="https://kit.fontawesome.com/d6d5ddb61c.js" crossorigin="anonymous"></script>
 </body>
 </html>
