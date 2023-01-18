@@ -12,4 +12,10 @@
 
 .screens-header__icons span{
     margin-left: 25px;
+    position: relative;
+    
+}
+
+.screens-header__notification{
+    position: absolute;
 }
