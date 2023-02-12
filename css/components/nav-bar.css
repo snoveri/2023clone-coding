@@ -19,24 +19,16 @@
 }
 .nav__notification{
     position: absolute;
-    color: white;
-    background-color: tomato;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 26px;
-    height: 26px;
-    border-radius: 13px;
-    font-weight: 600;
     left: 20px;
     bottom: 15px;
-    
 }
 
 .nav__dot{
+    position: absolute;
     width: 6px;
     height: 6px;
     border-radius: 3px;
     bottom: 28px;
-    right: 50px;
+    right: -6px;
+    background-color: tomato;
 }
