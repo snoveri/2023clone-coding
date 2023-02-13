@@ -1,8 +1,12 @@
 .alt-header{
-    padding: 40px var(--horizontal-space);
+    padding: 60px var(--horizontal-space) 30px var(--horizontal-space);
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.alt-header__column{
+    width: 33%;
 }
 
 .alt-header__title{
@@ -13,4 +17,14 @@
 
 .alt-header__column:last-child{
     padding-top: 14px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.alt-header__column span:last-child {
+    margin-left: 20px;
+}
+
+.alt-header__column:nth-child(2){
+    text-align: center;
 }
